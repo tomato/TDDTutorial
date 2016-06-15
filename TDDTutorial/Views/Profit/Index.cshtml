@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TDDTutorial.Models.Sprint>
+﻿@model TDDTutorial.Models.Project
 
 <h2>Stories</h2>
 
@@ -17,7 +17,7 @@
         <th>Cost</th>
         <th>Revenue</th>
     </tr>
-    @foreach (var sprint in Model)
+    @foreach (var sprint in Model.Sprints)
     {
         <tr>
             <td>@sprint.Id</td>

@@ -9,10 +9,9 @@ namespace TDDTutorial.Controllers
 {
     public class ProfitController : Controller
     {
-        // GET: Profit
         public ActionResult Index()
         {
-            return View(DataContext.GetSprints());
+            return View(new DataContext().GetProject());
         }
     }
 }
