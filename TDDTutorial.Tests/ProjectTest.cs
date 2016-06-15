@@ -16,8 +16,9 @@ namespace TDDTutorial.Tests
             {
                 Sprints = new List<Sprint>()
                 {
-                    new Sprint() { Revenue = 123 },
-                    new Sprint() { Revenue = 1 }
+                    new Sprint() { Revenue = 123, IsComplete = true },
+                    new Sprint() { Revenue = 1, IsComplete = true},
+                    new Sprint() { Revenue = 900, IsComplete = false}
                 }
             };
 
@@ -26,6 +27,27 @@ namespace TDDTutorial.Tests
 
             //Assert
             Assert.AreEqual(124, revenue);
+        }
+
+        [Test]
+        public void TotalCosts_ShouldShowSumOfSprintCosts()
+        {
+            //Arrange
+            var project = new Project()
+            {
+                Sprints = new List<Sprint>()
+                {
+                    new Sprint() { Cost = 99, IsComplete = true },
+                    new Sprint() { Cost = 1, IsComplete = true },
+                    new Sprint() { Cost = 1, IsComplete = false }
+                }
+            };
+
+            //Act
+            var cost = project.Cost;
+
+            //Assert
+            Assert.AreEqual(100, cost);
         }
 
         [Test]
