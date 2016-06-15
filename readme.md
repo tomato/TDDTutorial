@@ -10,12 +10,12 @@ Arrange, Act Assert
 1. Add Profit to the UI. Can you see a problem?
 1. Add a test to illustrate the problem (Profit_ShouldShowCorrectPercentageRatioIsNotWholeNumber)
 
-1. Add *TotalRevenue_ShouldShowSumOfSprintRevenues*
+1. Add *TotalRevenue_ShouldShowSumOfCompletedSprintRevenues*
 1. What could go wrong with our code?
 1. Add TotalRevenue_ShouldShow0IfThereAreNoSprints
-1. Add To Revenue to the UI
-1. Can you see a problem with calculating on page load? 
+1. Add Revenue to the UI
+1. Add *TotalRevenue_ShouldShowSumOfCompletedSprintCosts*
 1. Red, Green, Refactor. 
-1. Change to be calculated on load
+1. Can we refactor to reduce redundency
 
 
