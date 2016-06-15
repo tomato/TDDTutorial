@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace TDDTutorial.Tests
 {
     [TestFixture]
-    public class ProjectTest
+    public class SprintTest
     {
         [Test]
         public void Test1()
