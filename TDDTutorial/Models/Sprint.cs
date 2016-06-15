@@ -10,5 +10,6 @@ namespace TDDTutorial.Models
         public int Id { get; set; }
         public int Cost { get; set; }
         public int Revenue { get; set; }
+        public bool IsCompleted { get; set; }
     }
 }

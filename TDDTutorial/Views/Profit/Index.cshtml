@@ -4,9 +4,8 @@
 
 <ol>
     <li>Should show % profit for each sprint</li>
-    <li>Should show total Revenue and Cost for all sprints</li>
-    <li>Should show total % profit</li>
-    
+    <li>Should show total Revenue for all completed sprints</li>
+    <li>Should show total Cost for all completed sprints</li>
 </ol>
 
 <h2>Team Profit</h2>
@@ -16,6 +15,7 @@
         <th>Sprint</th>
         <th>Cost</th>
         <th>Revenue</th>
+        <th>Complete</th>
     </tr>
     @foreach (var sprint in Model.Sprints)
     {
@@ -23,6 +23,7 @@
             <td>@sprint.Id</td>
             <td>@sprint.Cost</td>
             <td>@sprint.Revenue</td>
+            <td>@sprint.IsCompleted</td>
         </tr>
     }
 </table>
