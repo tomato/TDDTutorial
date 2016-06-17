@@ -1,5 +1,11 @@
 # TDDTutorial
 
+##Purpose
+* To demonstrate how simple and fast TDD can be
+* To show how it contributes to clean code
+* To show how it can reveal problems earlier
+* To show how you spend more time writing code and less time debugging
+
 The workshops starts with a skeleton of an mvc project and sprint data
 
 ###Team Profit
