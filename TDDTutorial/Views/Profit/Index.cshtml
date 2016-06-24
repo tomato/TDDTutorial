@@ -16,6 +16,7 @@
         <th>Cost</th>
         <th>Revenue</th>
         <th>Complete</th>
+        <th>Profit</th>
     </tr>
     @foreach (var sprint in Model.Sprints)
     {
@@ -23,8 +24,16 @@
             <td>@sprint.Id</td>
             <td>@sprint.Cost</td>
             <td>@sprint.Revenue</td>
-            <td>@sprint.IsCompleted</td>
+            <td>
+    @sprint.IsCompleted
+        </td>
+        <td>@sprint.Profit</td>
         </tr>
     }
+    <tr>
+        <th>Total</th>
+        <td>@Model.TotalCost()</td>
+        <td>@Model.TotalRevenue()</td>
+    </tr>
 </table>
 

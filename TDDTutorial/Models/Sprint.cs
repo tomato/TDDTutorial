@@ -11,5 +11,14 @@ namespace TDDTutorial.Models
         public int Cost { get; set; }
         public int Revenue { get; set; }
         public bool IsCompleted { get; set; }
+        public double Profit {
+            get
+            {
+                if (Cost == 0)
+                    return 0;
+
+                return (Revenue / Convert.ToDouble(Cost)) * 100;
+            }
+        }
     }
 }
